@@ -79,9 +79,6 @@ def text_obj_scr(text,font):
     return textSurface, textSurface.get_recr()
 
 # Message displaying for field
-
-
-
 def msg_display1_scr(text, x, y, fs, c):
     largeText = pygame.font.SysFont('consolas', fs)
     TextSurf, TextRect = text_objects1(text, largeText)
@@ -91,8 +88,6 @@ def msg_display1_scr(text, x, y, fs, c):
 def text_obj_scr(text, font, c):
     textSurfont.render(text, True, c)
     return textSurface, textSurface.get_rect()
-
-
 
 #coin movement function
 def movement(a):
@@ -120,7 +115,6 @@ def text_objects1(text, font):
 
 
 #function to find if the user has found a ladder
-
 def ladders(x):
 
 
