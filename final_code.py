@@ -116,56 +116,20 @@ def text_objects1(text, font):
 
 #function to find if the user has found a ladder
 def ladders(x):
-
-
-
     #usage of arrays/lists according to the project requirets
-
-
-
     lad1 = [1,4,9,28,21,51,80,72]
-
-
-
     lad2 = [38,14,31,84,42,67,99,91]
-
-
-
+    
     global idn, val, idn1, val1
 
-
-
     if x in lad1:
-
-
-
         idn = lad1.index(x)
-
-
-
         val = lad2[idn]
-
-
-
         return val
-
-
     else:
-
-
-
         return x
 
-
-
-
-
-
-
 #function to find if the user has found a snake
-
-
-
 def snakes(x):
 
 
