@@ -131,32 +131,17 @@ def ladders(x):
 
 #function to find if the user has found a snake
 def snakes(x):
-
-
-
+    
     #usage of arrays/lists according to the project requirements
-
-
-
     sna1 = [17,54,62,64,87,93,95,98]
-
-
 
     sna2 = [7,34,19,60,36,73,75,79]
 
-
-
     global idn, val, idn1, val1
-
-
 
     if x in sna1:
 
-
-
         idn1 = sna1.index(x)
-
-
 
         val1 = sna2[idn1]
 
