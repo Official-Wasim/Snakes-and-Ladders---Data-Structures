@@ -134,243 +134,71 @@ def snakes(x):
     
     #usage of arrays/lists according to the project requirements
     sna1 = [17,54,62,64,87,93,95,98]
-
     sna2 = [7,34,19,60,36,73,75,79]
-
+    
     global idn, val, idn1, val1
-
+    
     if x in sna1:
-
         idn1 = sna1.index(x)
-
         val1 = sna2[idn1]
-
-
-
         return val1
-
-
-
     else:
-
-
-
         return x
 
 
-
-
-
-
-
 #function for the dice movement   
-
-
-
 def dice(d):
-
-
-
     if d == 1:
-
-
-
         d = d1
-
-
-
     elif d == 2:
-
-
-
         d = d2
-
-
-
     elif d == 3:
-
-
-
         d = d3
-
-
-
     elif d == 4:
-
-
-
         d = d4
-
-
-
     elif d == 5:
-
-
-
         d = d5
-
-
-
     elif d == 6:
-
-
-
         d = d6
 
 
-
-
-
-
-
-    time_clock = pygame.time.get_ticks()
-
-
+   time_clock = pygame.time.get_ticks()
 
     while pygame.time.get_ticks() - time_clock < 1000:
-
-
-
         display.blit(d, (300, 500))
-
-
-
         pygame.display.update()
 
-
-
-
-
-
-
-#adding the buttons which is necessary for the function
-
-
-
-# of mute and unmute music and show credits
-
-
+#adding the buttons which is necessary for the function of mute and unmute music and show credits
 
 def button2(t, xm, ym, x, y, wid, hei, int, after, fast):
-
-
-
     # mouse position
-
-
-
     mouse = pygame.mouse.get_pos()
-
-
-
     click = pygame.mouse.get_pressed()
-
-
-
     if x + wid > xm > x and y + hei > ym > y:
-
-
-
         pygame.draw.rect(display, after, [x - 2.5, y - 2.5, wid + 5, hei + 5])
-
-
-
         if pygame.mouse.get_pressed() == (1, 0, 0):
-
-
-
             return True
-
-
-
-
-
-
-
     else:
-
-
-
-        pygame.draw.rect(display, int, [x, y, wid, hei])
-
-
-
+        pygame.dra.rect(display, int, [x, y, wid, hei])
     msg_display_scr(t, (x + wid + x) / 2, (y + hei + y) / 2, fast)
-
-
-
-
-
-
-
-
-
 
 
 # Buttons for playing:
 
-
-
 def button1(t, xm, ym, x, y, wid, hei, int, after, fast):
-
-
-
     # mouse position
-
-
-
     mouse = pygame.mouse.get_pos()
-
-
-
     click = pygame.mouse.get_pressed()
-
-
-
     if x + wid > xm > x and y + hei > ym > y:
-
-
-
         pygame.draw.rect(display, after, [x - 2.5, y - 2.5, wid + 5, hei + 5])
-
-
-
         if pygame.mouse.get_pressed() == (1, 0, 0):
-
-
-
             return True
-
-
-
-
-
-
-
     else:
-
-
-
         pygame.draw.rect(display, after, [x, y, wid, hei])
-
-
-
     msg_display_scr(t, (x + wid + x) / 2, (y + hei + y) / 2, fast)
 
 
-
-
-
-
-
-
-
-
-
 #function for each turn of the user
-
-
-
 def turn(sc, lefted, section):
 
 
