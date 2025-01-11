@@ -200,37 +200,14 @@ def button1(t, xm, ym, x, y, wid, hei, int, after, fast):
 
 #function for each turn of the user
 def turn(sc, lefted, section):
-
-
-
     d = randint(1, 6)
-
-
-
     if d == 6:
-
-
-
         six = True
-
-
-
     else:
-
-
-
         six = False
 
-
-
     p = dice(d)
-
-
-
     sc += d
-
-
-
     if sc <+ 100:
 
 
